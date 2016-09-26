@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		A7A9A59C1D9863C300125F88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A9A59B1D9863C300125F88 /* AppDelegate.swift */; };
 		A7A9A59E1D9863C300125F88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A9A59D1D9863C300125F88 /* ViewController.swift */; };
-		A7A9A5A11D9863C300125F88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7A9A59F1D9863C300125F88 /* Main.storyboard */; };
 		A7A9A5A31D9863C300125F88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7A9A5A21D9863C300125F88 /* Assets.xcassets */; };
 		A7A9A5A61D9863C300125F88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7A9A5A41D9863C300125F88 /* LaunchScreen.storyboard */; };
 		A7A9A5B11D9863C300125F88 /* siege_statsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A9A5B01D9863C300125F88 /* siege_statsTests.swift */; };
 		A7A9A5BC1D9863C300125F88 /* siege_statsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A9A5BB1D9863C300125F88 /* siege_statsUITests.swift */; };
+		A7A9A5CA1D9864E400125F88 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7A9A5C91D9864E400125F88 /* ViewController.xib */; };
+		A7A9A5CC1D9866C100125F88 /* StatsRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A9A5CB1D9866C100125F88 /* StatsRetriever.swift */; };
+		A7A9A5CE1D98673600125F88 /* PlayerProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A9A5CD1D98673600125F88 /* PlayerProfile.swift */; };
+		A7A9A5D61D9883BA00125F88 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7A9A5D01D9883BA00125F88 /* Alamofire.framework */; };
+		A7A9A5DB1D9883BA00125F88 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7A9A5D51D9883BA00125F88 /* SwiftyJSON.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +41,6 @@
 		A7A9A5981D9863C300125F88 /* siege-stats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "siege-stats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7A9A59B1D9863C300125F88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7A9A59D1D9863C300125F88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A7A9A5A01D9863C300125F88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7A9A5A21D9863C300125F88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7A9A5A51D9863C300125F88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7A9A5A71D9863C300125F88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +50,15 @@
 		A7A9A5B71D9863C300125F88 /* siege-statsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "siege-statsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7A9A5BB1D9863C300125F88 /* siege_statsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = siege_statsUITests.swift; sourceTree = "<group>"; };
 		A7A9A5BD1D9863C300125F88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7A9A5C91D9864E400125F88 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		A7A9A5CB1D9866C100125F88 /* StatsRetriever.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsRetriever.swift; sourceTree = "<group>"; };
+		A7A9A5CD1D98673600125F88 /* PlayerProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerProfile.swift; sourceTree = "<group>"; };
+		A7A9A5D01D9883BA00125F88 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		A7A9A5D11D9883BA00125F88 /* RxAlamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAlamofire.framework; path = Carthage/Build/iOS/RxAlamofire.framework; sourceTree = "<group>"; };
+		A7A9A5D21D9883BA00125F88 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		A7A9A5D31D9883BA00125F88 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		A7A9A5D41D9883BA00125F88 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		A7A9A5D51D9883BA00125F88 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7A9A5D61D9883BA00125F88 /* Alamofire.framework in Frameworks */,
+				A7A9A5DB1D9883BA00125F88 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +95,7 @@
 				A7A9A5AF1D9863C300125F88 /* siege-statsTests */,
 				A7A9A5BA1D9863C300125F88 /* siege-statsUITests */,
 				A7A9A5991D9863C300125F88 /* Products */,
+				A7A9A5CF1D9883B700125F88 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +114,12 @@
 			children = (
 				A7A9A59B1D9863C300125F88 /* AppDelegate.swift */,
 				A7A9A59D1D9863C300125F88 /* ViewController.swift */,
-				A7A9A59F1D9863C300125F88 /* Main.storyboard */,
 				A7A9A5A21D9863C300125F88 /* Assets.xcassets */,
 				A7A9A5A41D9863C300125F88 /* LaunchScreen.storyboard */,
 				A7A9A5A71D9863C300125F88 /* Info.plist */,
+				A7A9A5C91D9864E400125F88 /* ViewController.xib */,
+				A7A9A5CB1D9866C100125F88 /* StatsRetriever.swift */,
+				A7A9A5CD1D98673600125F88 /* PlayerProfile.swift */,
 			);
 			path = "siege-stats";
 			sourceTree = "<group>";
@@ -125,6 +142,19 @@
 			path = "siege-statsUITests";
 			sourceTree = "<group>";
 		};
+		A7A9A5CF1D9883B700125F88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7A9A5D01D9883BA00125F88 /* Alamofire.framework */,
+				A7A9A5D11D9883BA00125F88 /* RxAlamofire.framework */,
+				A7A9A5D21D9883BA00125F88 /* RxBlocking.framework */,
+				A7A9A5D31D9883BA00125F88 /* RxCocoa.framework */,
+				A7A9A5D41D9883BA00125F88 /* RxSwift.framework */,
+				A7A9A5D51D9883BA00125F88 /* SwiftyJSON.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +165,7 @@
 				A7A9A5941D9863C300125F88 /* Sources */,
 				A7A9A5951D9863C300125F88 /* Frameworks */,
 				A7A9A5961D9863C300125F88 /* Resources */,
+				A7A9A5DE1D98ACF900125F88 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -233,8 +264,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7A9A5A61D9863C300125F88 /* LaunchScreen.storyboard in Resources */,
+				A7A9A5CA1D9864E400125F88 /* ViewController.xib in Resources */,
 				A7A9A5A31D9863C300125F88 /* Assets.xcassets in Resources */,
-				A7A9A5A11D9863C300125F88 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,11 +285,32 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A7A9A5DE1D98ACF900125F88 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/bin/sh ";
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A7A9A5941D9863C300125F88 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7A9A5CE1D98673600125F88 /* PlayerProfile.swift in Sources */,
+				A7A9A5CC1D9866C100125F88 /* StatsRetriever.swift in Sources */,
 				A7A9A59E1D9863C300125F88 /* ViewController.swift in Sources */,
 				A7A9A59C1D9863C300125F88 /* AppDelegate.swift in Sources */,
 			);
@@ -296,14 +348,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A7A9A59F1D9863C300125F88 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A7A9A5A01D9863C300125F88 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A7A9A5A41D9863C300125F88 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -412,6 +456,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "siege-stats/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "rabel.siege-stats";
@@ -424,6 +472,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "siege-stats/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "rabel.siege-stats";
